@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Monomaniac+One&display=swap" rel="stylesheet">
+    
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
+    <title>きょうりゅうずかん</title>
   <body>
+    <header>
+      <div class="heading">
+        <%= image_tag "森.jpg", class:"heading-image1" %>
+        <h1 class = "heading-title" >きょうりゅうずかん</h1>
+        <%= image_tag "ティラノサウルス オリジナル.png", class:"heading-image2" %>
+        <%= image_tag "考古学者.png", class:"heading-image3" %>
+        <div class="heading-comment">
+          きょうからきみも<br><span class="span-red">きょうりゅうはかせ</span>だ！
+        </div>
+        <div class ="admin">
+          管理者ログイン
+        </div>
+      </div>
+      <div class="heading-menu">
+        <ul class = "heading-ul" >
+          <li class="heading-li">🌍とっぷぺーじ🌎</li>
+          <li class="heading-li">🍖にくしょくきょうりゅう🍖</li>
+          <li class="heading-li">🌿そうしょくきょうりゅう🌿</li>
+        </ul>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
