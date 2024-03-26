@@ -2,5 +2,17 @@
   <div class="index-title">
     きょうりゅういちらん
   </div>
-  
+   <div class="index-dinosaurs">
+      <% @dinosaurs.each do |dinosaur| %>
+        <li class="li-dinosaur">
+        <%= link_to root_path do %>
+          <div class=image-index>
+            <%= image_tag dinosaur.image.variant(resize: '400x400'), class: 'index-image' %>
+          </div>
+          <div class="name-index">
+            <%= dinosaur.name %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
 </div>
