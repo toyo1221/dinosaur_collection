@@ -3,6 +3,9 @@
     きょうりゅうとうろく
   </div>
   <div class="new-back2">
+    <%= link_to root_path, class: "return-new" do %>
+      もどる
+    <% end %>
     <div class="dinosaurs">
       <%= form_with model:@dinosaur, local: true do |f| %>
         <div class="new-image">

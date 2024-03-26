@@ -5,7 +5,7 @@
    <div class="index-dinosaurs">
       <% @dinosaurs.each do |dinosaur| %>
         <li class="li-dinosaur">
-        <%= link_to root_path do %>
+        <%= link_to dinosaur_path(dinosaur) do %>
           <div class=image-index>
             <%= image_tag dinosaur.image.variant(resize: '400x400'), class: 'index-image' %>
           </div>
