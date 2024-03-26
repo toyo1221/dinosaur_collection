@@ -1,0 +1,42 @@
+<div class="new-back1">
+  <div class="new-title">
+    きょうりゅうとうろく
+  </div>
+  <div class="new-back2">
+    <div class="dinosaurs">
+      <%= form_with model:@dinosaur, local: true do |f| %>
+        <div class="new-image">
+          きょうりゅうのがぞう<br>
+          <%= f.file_field :image, id:"dinosaur-image" %>
+        </div>
+        <div class="new-name">
+          きょうりゅうのなまえ<br>
+          <%= f.text_area :name, class:"dinosaur-name", id:"dinosaur-name", placeholder:"例）ティラノサウルス" , maxlength:"20"%>
+        </div>
+        <div class="new-eating">
+          たべもののタイプ<br>
+          <%= f.collection_select(:eating_id, Eating.all, :id, :name, {}, {class:"select-box", id:"dinosaur-eating"}) %>
+        </div>
+        <div class="new-era">
+          いきていたじだい<br>
+          <%= f.collection_select(:era_id, Era.all, :id, :name, {}, {class:"select-box", id:"dinosaur-era"}) %>
+        </div>
+        <div class="new-size">
+          きょうりゅうのおおきさ<br>
+          <%= f.text_area :size, class:"dinosaur-size", id:"dinosaur-size", placeholder:"例）10" , maxlength:"4"%>メートル
+        </div>
+        <div class="new-weight">
+          きょうりゅうのおもさ<br>
+          <%= f.text_area :weight, class:"dinosaur-weight", id:"dinosaur-weight", placeholder:"例）5" , maxlength:"4"%>トン
+        </div>
+        <div class="new-explantion">
+          きょうりゅうのせつめい<br>
+          <%= f.text_area :explanation, class:"dinosaur-explantion", id:"dinosaur-explantion", placeholder:"例）おおきなからだときょうりょくなあごをもっている'さいきょうのきょうりゅう'だ！" , maxlength:"100"%>
+        </div>
+        <div class="new-registration">
+          <%= f.submit "とうろくする" ,class:"dinosaur-registration" %>
+        </div>
+      <% end %>
+    </div>
+    <%= image_tag "ブロントサウルス.png", class:"brontosaurus" %>
+</div>
