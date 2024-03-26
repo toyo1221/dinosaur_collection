@@ -7,6 +7,18 @@
   border:3px ridge #ffffcc;
 }
 
+.return-new {
+  background-image: url('/assets/やじるし.png');
+  height:120px;
+  width:125px;
+  text-decoration:none;
+  color:black;
+  position:absolute;
+  top:60px;
+  left:10px;
+  font-size:35px;
+  line-height:65px;
+}
 .new-title {
   background-image: url('/assets/藁.png');
   background-size:50%;

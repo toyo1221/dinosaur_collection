@@ -1,0 +1,34 @@
+<div class ="show-back">
+  <div class ="dinosaur-show">
+    <%= link_to root_path, class: "return-show" do %>
+        もどる
+    <% end %>
+    <div class= "image-show" >
+      <%= image_tag @dinosaur.image.variant(resize: '500x500'), class: "show-image" %>
+    </div>
+    <div class ="show-bottom">
+      <div class ="name-show">
+        <%= @dinosaur.name %>
+      </div>
+      <div class ="id-show" >
+        <div class ="eating-show" >
+          たべもののタイプ：<%= @dinosaur.eating.name %>
+        </div>
+        <div class ="era-show">
+          いきていたじだい：<%= @dinosaur.era.name %>
+        </div>
+      </div>
+      <div class ="spec-show">
+        <div class ="size-show">
+          ぜんちょう：<%= @dinosaur.size %>メートル
+        </div>
+        <div class ="weight-show">
+          たいじゅう：<%= @dinosaur.weight %>トン
+        </div>
+      </div>
+      <div class ="explanation-show">
+        <%= @dinosaur.explanation %>
+      </div>
+    </div>
+  </div>
+</div>

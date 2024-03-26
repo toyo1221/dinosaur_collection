@@ -1,0 +1,64 @@
+.show-back {
+  width:1355px;
+  height:800px;
+  background-color: rgba(255, 238, 217, 1);
+  position:absolute;
+  top:245px;
+  border:3px ridge #ffffcc;
+  overflow: scroll;
+  text-align:center;
+  font-size:30px;
+}
+
+.return-show {
+  background-image: url('/assets/やじるし.png');
+  height:120px;
+  width:125px;
+  text-decoration:none;
+  color:black;
+  position:absolute;
+  top:-30px;
+  left:-50px;
+  font-size:35px;
+  line-height:65px;
+}
+
+.dinosaur-show {
+ width:1250px;
+ position:absolute;
+ top:20px;
+ left:40px;
+}
+
+.show-bottom{
+  background-image: url('/assets/古い紙.png');
+}
+.image-show {
+  background-color:#fff;
+}
+
+.name-show {
+  font-size:50px;
+}
+
+.id-show {
+  display:flex;
+  justify-content:center
+}
+
+.era-show {
+  margin-left:20px;
+}
+
+.weight-show {
+  margin-left: 20px;
+}
+
+.spec-show {
+  display:flex;
+  justify-content:center
+}
+
+.explanation-show{
+  padding-bottom:30px;
+}
