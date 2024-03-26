@@ -5,20 +5,45 @@
   position:absolute;
   top:245px;
   border:3px ridge #ffffcc;
+  overflow-y: auto;
 }
 
 .index-title {
   background-image: url('/assets/地層2.png');
-  background-size:100%;
-  height:60px;
-  width:300px;
-  font-size:45px;
+  background-size:50%;
+  height:90px;
+  width:1350px;
+  font-size:70px;
   text-align:center;
-  line-height:50px;
-  position:absolute;
-  top:5px;
-  left:40px;
+  line-height:70px;
   border:3px ridge #ffffcc;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #663300;
+}
+
+.index-dinosaurs {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.li-dinosaur {
+  width: calc(33.33% - 40px);
+  margin:0 20px;
+}
+
+.li-dinosaur a {
+  text-decoration:none;
+  color:black;
+}
+
+.image-index{
+  background-image: url('/assets/古い紙.png');
+  height:320px;
+}
+
+.name-index {
+  text-decoration: none;
+  font-size:40px;
+  text-align:center;
+  background-color:#fff;
 }
