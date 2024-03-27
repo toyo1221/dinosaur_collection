@@ -1,0 +1,60 @@
+.admin-back {
+  width:1355px;
+  height:600px;
+  background-color: rgba(255, 238, 217, 1);
+  position:absolute;
+  top:245px;
+  border:3px ridge #ffffcc;
+  text-align:center;
+}
+
+.admin-main {
+  background-image: url('/assets/木の色.png');
+  font-size:25px;
+  width:1000px;
+  height:300px;
+  position:absolute;
+  top:20px;
+  left:175px;
+  border:3px ridge #ffffcc;
+}
+
+.admin-title {
+  background-color:#CC6600;
+  font-family: "MS ゴシック";
+  font-size:35px;
+  font-weight:bold;
+}
+
+.admin-box {
+  width:240px;
+  height:25px;
+}
+
+.login-btn {
+  width:160px;
+  height:40px;
+  margin-top:20px;
+  font-family: "Darumadrop One", sans-serif;
+  font-size:25px;
+  color:#CC3300;
+  border:1px solid black;
+}
+
+.return-admin {
+  width:160px;
+  height:38px;
+  font-family: "Darumadrop One", sans-serif;
+  font-size:25px;
+  color:#3366CC;
+  position:absolute;
+  top:350px;
+  left:600px;
+  background-color:#fff;
+  border:1px solid black;
+  text-decoration: none;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #220000;
+
+}
+

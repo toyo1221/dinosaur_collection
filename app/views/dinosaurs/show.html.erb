@@ -1,8 +1,5 @@
 <div class ="show-back">
   <div class ="dinosaur-show">
-    <%= link_to root_path, class: "return-show" do %>
-        もどる
-    <% end %>
     <div class= "image-show" >
       <%= image_tag @dinosaur.image.variant(resize: '500x500'), class: "show-image" %>
     </div>
@@ -31,4 +28,7 @@
       </div>
     </div>
   </div>
+    <%= link_to root_path, class: "return-show" do %>
+        もどる
+    <% end %>
 </div>

@@ -1,0 +1,26 @@
+<div class = "admin-back">
+<%= form_with model: @admin, url: admin_session_path, class: 'registration-main', local: true do |f| %>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+
+  <div class="admin-main">
+    <div class="admin-title">
+      管理者ログイン
+    </div>
+    <div class="admin-email">
+      メールアドレス<br>
+      <%= f.email_field :email, class:"admin-box", id:"email", autofocus: true %>
+    </div>
+    <div class="admin-password">
+      パスワード<br>
+      <%= f.password_field :password, class:"admin-box", id:"password" %>
+    </div>
+    <div class="admin-login-btn">
+      <%= f.submit "ログイン" ,class:"login-btn" %>
+    </div>
+  </div>
+<% end %>
+  <%= link_to root_path, class: "return-admin" do %>
+    もどる
+  <% end %>
+</div>
