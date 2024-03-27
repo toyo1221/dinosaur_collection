@@ -1,8 +1,10 @@
+
+
 <div class="index-back">
   <div class="index-title">
     きょうりゅういちらん
   </div>
-   <div class="index-dinosaurs">
+  <div class="index-dinosaurs">
       <% @dinosaurs.each do |dinosaur| %>
         <li class="li-dinosaur">
         <%= link_to dinosaur_path(dinosaur) do %>
@@ -15,4 +17,10 @@
         <% end %>
       <% end %>
     </div>
+</div>
+
+<div class="dinosaur-btn" >  
+  <%= link_to new_dinosaur_path, class: "new-dinosaur-btn" do %>
+    きょうりゅうとうろく
+  <% end %>
 </div>
