@@ -19,8 +19,10 @@
     </div>
 </div>
 
-<div class="dinosaur-btn" >  
-  <%= link_to new_dinosaur_path, class: "new-dinosaur-btn" do %>
-    きょうりゅうとうろく
-  <% end %>
-</div>
+<% if admin_signed_in? %>
+  <div class="dinosaur-btn" >  
+    <%= link_to new_dinosaur_path, class: "new-dinosaur-btn" do %>
+      きょうりゅうとうろく
+    <% end %>
+  </div>
+<% end %>

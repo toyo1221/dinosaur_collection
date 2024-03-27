@@ -1,0 +1,43 @@
+.edit-title {
+  background-image: url('/assets/恐竜の卵.png');
+  background-size:7.1%;
+  height:90px;
+  width:1350px;
+  font-size:70px;
+  text-align:center;
+  line-height:70px;
+  border:3px ridge #ffffcc;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #663300;
+}
+
+.edit-dinosaur {
+  display:flex;
+  text-align: center;
+}
+
+.dinosaur-edit {
+  width:165px;
+  height:50px;
+  font-size:30px;
+  margin-top:20px;
+  background-color:white;
+  font-family: "Darumadrop One", sans-serif;
+  color:#FFB6C1;
+  border: 1px solid black;
+}
+
+.return-edit {
+  width:120px;
+  height:48px;
+  font-size:30px;
+  margin-top:20px;
+  background-color:white;
+  font-family: "Darumadrop One", sans-serif;
+  color:#3366cc;
+  border: 1px solid black;
+  text-decoration: none;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #220000;
+  margin-left:25px;
+}

@@ -52,18 +52,19 @@
 
 .new-dinosaur-btn {
   text-decoration: none;
-  color:#fff;
+  color:red;
   font-size:25px;
-  line-height:190px;
+  line-height:187px;
   -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: black;
-  background-color:#cccccc;
-  border:3px ridge #444444;
+  -webkit-text-stroke-color: #663300;
+  background-color:#F0FFFF;
+  border:2px solid #663300;
+  border-radius:15px;
 }
 
 .dinosaur-btn {
   height:100px;
-  width:150px;
+  width:160px;
   position:absolute;
   left:1150px;
   top:227px;
