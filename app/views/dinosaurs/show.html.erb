@@ -28,6 +28,7 @@
       </div>
     </div>
   </div>
+
   <% if admin_signed_in? %>
     <%= link_to edit_dinosaur_path, class: "edit-show" do %>
         へんしゅうする
@@ -36,6 +37,8 @@
     <%= link_to root_path, class: "return-show" do %>
         もどる
     <% end %>
-  
+  <% if admin_signed_in? %>
+    <%= link_to "さくじょする", dinosaur_path(@dinosaur.id), data: { turbo_method: :delete }, class:"destroy-show" %>
+  <% end %>
 
 </div>

@@ -1,6 +1,6 @@
 class DinosaursController < ApplicationController
-  before_action :authenticate_admin!, only: [:new, :create, :edit, :update]
-  before_action :find_dinosaur, only: [:show, :edit, :update]
+  before_action :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :find_dinosaur, only: [:show, :edit, :update, :destroy]
   def index
     @dinosaurs = Dinosaur.order(:name)
   end
@@ -32,6 +32,12 @@ class DinosaursController < ApplicationController
       render :edit,status: :unprocessable_entity
     end
   end
+
+  def destroy
+    @dinosaur.destroy
+    redirect_to root_path
+  end
+
 
   private
   def find_dinosaur
