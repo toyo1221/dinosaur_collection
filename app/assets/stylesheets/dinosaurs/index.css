@@ -8,6 +8,8 @@
   overflow: scroll;
 }
 
+
+
 .index-title {
   background-image: url('/assets/地層2.png');
   background-size:50%;
@@ -47,3 +49,27 @@
   text-align:center;
   background-color:#fff;
 }
+
+.new-dinosaur-btn {
+  text-decoration: none;
+  color:red;
+  font-size:25px;
+  line-height:187px;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #663300;
+  background-color:#F0FFFF;
+  border:2px solid #663300;
+  border-radius:15px;
+}
+
+.dinosaur-btn {
+  height:100px;
+  width:160px;
+  position:absolute;
+  left:1150px;
+  top:227px;
+  background-image: url('/assets/ティラノ化石.png');
+  background-size:100%;
+  z-index:1;
+}
+
