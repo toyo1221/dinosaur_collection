@@ -81,3 +81,19 @@
   top:780px;
   left:600px;
 }
+
+.destroy-show {
+  width:300px;
+  height:80px;
+  font-size:50px;
+  background-color:white;
+  font-family: "Darumadrop One", sans-serif;
+  color:#4B0082;
+  border: 1px solid black;
+  text-decoration: none;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #220000;
+  position:absolute;
+  top:780px;
+  left:900px;
+}
