@@ -1,6 +1,6 @@
 .show-back {
   width:1355px;
-  height:800px;
+  height:900px;
   background-color: rgba(255, 238, 217, 1);
   position:absolute;
   top:245px;
@@ -8,19 +8,6 @@
   overflow: scroll;
   text-align:center;
   font-size:30px;
-}
-
-.return-show {
-  background-image: url('/assets/やじるし.png');
-  height:120px;
-  width:125px;
-  text-decoration:none;
-  color:black;
-  position:absolute;
-  top:-30px;
-  left:-50px;
-  font-size:35px;
-  line-height:65px;
 }
 
 .dinosaur-show {
@@ -61,4 +48,22 @@
 
 .explanation-show{
   padding-bottom:30px;
+}
+
+.return-show {
+  width:200px;
+  height:80px;
+  font-size:50px;
+
+  background-color:white;
+  font-family: "Darumadrop One", sans-serif;
+  color:#3366cc;
+  border: 1px solid black;
+  text-decoration: none;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #220000;
+  position:absolute;
+  top:780px;
+  left:600px;
+
 }

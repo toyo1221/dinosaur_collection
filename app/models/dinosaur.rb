@@ -4,6 +4,7 @@ class Dinosaur < ApplicationRecord
   belongs_to :era
 
   has_one_attached :image
+  belongs_to :admin
 
   validates :name, presence: true
   validates :eating_id, numericality: { other_than: 0, message: "can't be blank" }

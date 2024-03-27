@@ -3,9 +3,6 @@
     きょうりゅうとうろく
   </div>
   <div class="new-back2">
-    <%= link_to root_path, class: "return-new" do %>
-      もどる
-    <% end %>
     <div class="dinosaurs">
       <%= form_with model:@dinosaur, local: true do |f| %>
         <div class="new-image">
@@ -38,7 +35,11 @@
         </div>
         <div class="new-registration">
           <%= f.submit "とうろくする" ,class:"dinosaur-registration" %>
+          <%= link_to root_path, class: "return-new" do %>
+            もどる
+          <% end %>
         </div>
+
       <% end %>
     </div>
     <%= image_tag "背景1.jpg", class:"brontosaurus" %>

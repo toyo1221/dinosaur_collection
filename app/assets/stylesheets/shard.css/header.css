@@ -63,13 +63,26 @@ header {
     left:1100px;
     width:150px;
     text-align:center;
-    background-color:#3333CC;
+    background-color:#CC3300;
     border: 5px solid black;
     -webkit-text-stroke:0;
     border-radius:20px;
     font-family: "MS ゴシック";
     font-size:15px;
   }
+  .admin-login {
+    text-decoration: none;
+    color:#fff;
+  }
+
+  .admin2 {
+    background-color:#3333CC
+  }
+  .admin-logout {
+    text-decoration:none;
+    color:#fff;
+  }
+
   .span-red {
     color:red;
   }

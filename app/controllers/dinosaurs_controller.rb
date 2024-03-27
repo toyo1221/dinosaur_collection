@@ -1,4 +1,5 @@
 class DinosaursController < ApplicationController
+
   def index
     @dinosaurs = Dinosaur.order(:name)
   end

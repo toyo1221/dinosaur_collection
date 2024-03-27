@@ -7,7 +7,7 @@
         <li class="li-dinosaur">
         <%= link_to dinosaur_path(dinosaur) do %>
           <div class=image-index>
-            <%= image_tag dinosaur.image.variant(resize: '400x400'), class: 'index-image' %>
+            <%= image_tag dinosaur.image.variant(resize:'400x400'), class: 'index-image' %>
           </div>
           <div class="name-index">
             <%= dinosaur.name %>
