@@ -2,7 +2,18 @@ class DinosaursController < ApplicationController
   before_action :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy]
   before_action :find_dinosaur, only: [:show, :edit, :update, :destroy]
   def index
-    @dinosaurs = Dinosaur.order(:name)
+    if params[:eating].present?
+      eating_name = params[:eating]
+      eating_id = Eating.find_by(name: eating_name)&.id
+      if eating_id
+        @dinosaurs = Dinosaur.where(eating_id: eating_id).order(:name)
+      else
+        flash[:alert] = "Invalid eating type: #{eating_name}"
+        redirect_to dinosaurs_path
+      end
+    else
+      @dinosaurs = Dinosaur.order(:name)
+    end
   end
 
   def new

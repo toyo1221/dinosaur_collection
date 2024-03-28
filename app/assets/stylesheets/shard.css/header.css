@@ -119,3 +119,15 @@ header {
     text-align:center;
     background-color: #CC6600;
   }
+
+  .header-li {
+    text-decoration: none;
+    color:#fff;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #220000;
+  }
+
+
+  .active-container {
+    background-color: #FFD700;
+  }

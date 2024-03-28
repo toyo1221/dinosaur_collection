@@ -12,6 +12,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+    <script src="index.js"></script>
     <title>きょうりゅうずかん</title>
   <body>
     <header>
@@ -35,9 +36,21 @@
       </div>
       <div class="heading-menu">
         <ul class = "heading-ul" >
-          <li class="heading-li">とっぷぺーじ🌍</li>
-          <li class="heading-li">にくしょくきょうりゅう🍖</li>
-          <li class="heading-li">そうしょくきょうりゅう🥦</li>
+          <li class="heading-li">
+            <%= link_to dinosaurs_path, class: "header-li" do %>
+              🌍とっぷぺーじ
+            <% end %>
+          </li>
+          <li class="heading-li">
+            <%= link_to dinosaurs_path(eating: "そうしょく"), class: "header-li" do %>
+              🌿そうしょくきょうりゅう
+            <% end %>
+          </li>
+          <li class="heading-li">
+            <%= link_to dinosaurs_path(eating: "にくしょく"), class: "header-li" do %>
+              🍖にくしょくきょうりゅう
+            <% end %>
+          </li>
         </ul>
       </div>
     </header>
