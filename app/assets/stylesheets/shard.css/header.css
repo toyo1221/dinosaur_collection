@@ -126,3 +126,8 @@ header {
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #220000;
   }
+
+
+  .active-container {
+    background-color: #FFD700;
+  }
