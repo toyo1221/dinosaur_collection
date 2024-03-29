@@ -1,0 +1,16 @@
+<div class= "topic-back">
+  <%= image_tag "発掘者.png", class:"topics-image" %>
+  <div class ="iamge-topic">
+    <p class="topic-title">とぴっくす</p>
+  </div>
+  <div class= "topic-index">
+      <% @topics.each do |topic| %>
+      <div class="date">
+        <%= topic.created_at.strftime('%Y/%m/%d') %>
+      </div>
+      <div class ="topics-comment">
+        <%= topic.topic %>
+      </div>
+      <% end %>
+  </div>
+</div>

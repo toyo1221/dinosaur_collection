@@ -26,3 +26,13 @@
     <% end %>
   </div>
 <% end %>
+
+<div class="topics">
+  <%= render partial: 'topics/index' %>
+</div>
+
+<% if admin_signed_in? %>
+  <div class="new-topics">
+    <%= render partial: 'topics/new' %>
+  </div>
+<% end %>
