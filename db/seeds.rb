@@ -1,1 +1,3 @@
-Admin.create!(email: "iyankukku1221@icloud.com", password: "iyankukku3737")
+Rails.application.credentials.admin_email
+Rails.application.credentials.admin_password
+

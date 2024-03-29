@@ -1,0 +1,51 @@
+.topic-back {
+  background-color: rgba(255, 238, 217);
+  border:3px ridge #ffffcc;
+  height:1150px;
+  width:450px;
+}
+
+.topic-index {
+  background-color:#ffffee;
+  height:1100px;
+  width:400px;
+  position:absolute;
+  top:25px;
+  left:25px;
+ 
+}
+
+.date {
+  color:#33FF99;
+}
+
+.topics-comment {
+  font-size:25px;
+  border-bottom:2px dotted rgba(255, 238, 217);
+}
+
+.topics-image {
+  position:absolute;
+  z-index:1;
+  height:120px;
+  width:100px;
+  left:250px;
+  top:-100px;
+}
+
+.iamge-topic {
+  font-size:40px;
+  position:absolute;
+  z-index:1;
+  top:-152px;
+  height:180px;
+  width:200px;
+  background-image: url('木の看板.png');
+  background-size:100%;
+  
+}
+
+.topic-title {
+  text-align: center;
+
+}

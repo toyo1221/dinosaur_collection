@@ -1,6 +1,6 @@
 .index-back {
   width:1355px;
-  height:1200px;
+  height:1150px;
   background-color: rgba(255, 238, 217, 1);
   position:absolute;
   top:245px;
@@ -74,4 +74,21 @@
   background-size:100%;
   z-index:1;
 }
+
+.topics {
+  position:absolute;
+  left:1380px;
+  top:245px;
+  background-color:black;
+  z-index:2;
+}
+
+.new-topics {
+  position:absolute;
+  left:1428px;
+  top:1250px;
+  z-index:2;
+
+}
+
 
