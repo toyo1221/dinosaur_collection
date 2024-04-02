@@ -1,5 +1,3 @@
-
-
 <div class="index-back">
   <div class="index-title">
     きょうりゅういちらん
@@ -28,11 +26,33 @@
 <% end %>
 
 <div class="topics">
-  <%= render partial: 'topics/index' %>
+  <div class= "topic-back">
+  <%= image_tag "発掘者.png", class:"topics-image" %>
+  <div class ="iamge-topic">
+    <p class="topic-title">とぴっくす</p>
+  </div>
+  <div class= "topic-index">
+      <% @topics.each do |topic| %>
+      <div class="date">
+        <%= topic.created_at.strftime('%Y/%m/%d') %>
+      </div>
+      <div class ="topics-comment">
+        <%= topic.topic %>
+      </div>
+      <% end %>
+  </div>
+</div>
 </div>
 
 <% if admin_signed_in? %>
   <div class="new-topics">
-    <%= render partial: 'topics/new' %>
+    <%= form_with model: Topic.new, url: dinosaurs_path, local: true do |f| %>
+      <div class="text-topic">
+        <%= f.text_area :topic, class: "topic-text", id: "topic-text", placeholder: "", maxlength: "40" %>
+      </div>
+      <div class="registration-topix">
+        <%= f.submit "とうこうする", class: "topic-registration" %>
+      </div>
+    <% end %>
   </div>
 <% end %>

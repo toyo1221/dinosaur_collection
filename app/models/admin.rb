@@ -5,5 +5,4 @@ class Admin < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :dinosaurs
-  has_many :topics
 end

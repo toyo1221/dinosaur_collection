@@ -3,16 +3,18 @@ class DinosaursController < ApplicationController
   before_action :find_dinosaur, only: [:show, :edit, :update, :destroy]
   def index
     dinosaur_filter
-    @topics=Topic.all
+    @topics = Topic.order(created_at: :desc).all
   end
 
   def new
     @dinosaur = Dinosaur.new
     @topic = Topic.new
-    
+
   end
 
   def create
+    @topic = Topic.new(topic_params)
+    @topic.save!
     @dinosaur = Dinosaur.new(dinosaur_params)
     if @dinosaur.save
       redirect_to root_path
@@ -65,5 +67,9 @@ class DinosaursController < ApplicationController
 
   def dinosaur_params
     params.require(:dinosaur).permit(:image, :name, :eating_id, :era_id, :size, :weight, :explanation).merge(admin_id:current_admin.id)
+  end
+
+  def topic_params
+    params.require(:topic).permit(:topic)
   end
 end
