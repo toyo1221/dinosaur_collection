@@ -38,6 +38,9 @@
       </div>
       <div class ="topics-comment">
         <%= topic.topic %>
+        <% if admin_signed_in? %>
+        <%= link_to "さくじょ", topic_path(topic.id), data: { turbo_method: :delete }, class:"topic-destroy" %>
+        <% end %>
       </div>
       <% end %>
   </div>
@@ -46,7 +49,7 @@
 
 <% if admin_signed_in? %>
   <div class="new-topics">
-    <%= form_with model: Topic.new, url: dinosaurs_path, local: true do |f| %>
+    <%= form_with model: Topic.new, url: topics_path, local: true do |f| %>
       <div class="text-topic">
         <%= f.text_area :topic, class: "topic-text", id: "topic-text", placeholder: "", maxlength: "40" %>
       </div>

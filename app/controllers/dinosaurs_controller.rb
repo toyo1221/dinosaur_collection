@@ -8,13 +8,10 @@ class DinosaursController < ApplicationController
 
   def new
     @dinosaur = Dinosaur.new
-    @topic = Topic.new
-
   end
 
   def create
-    @topic = Topic.new(topic_params)
-    @topic.save!
+
     @dinosaur = Dinosaur.new(dinosaur_params)
     if @dinosaur.save
       redirect_to root_path
