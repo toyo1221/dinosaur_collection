@@ -5,6 +5,7 @@ class Dinosaur < ApplicationRecord
   validates :size, presence: true
   validates :weight, presence: true
   validates :explanation, presence: true
+  validates :image, presence: true
 
   has_one_attached :image
   belongs_to :admin
